@@ -68,7 +68,7 @@ def main():
         description='A simple 32-bit ELF file explorer and patcher'
     )
     # TODO: add more arguments as needed.
-    parser.add_argument("-f", "--file", help="path to the ELF file")
+    parser.add_argument("-f", "--file", help="path to the ELF file", required=True)
 
     args = parser.parse_args()
     filepath = args.file
